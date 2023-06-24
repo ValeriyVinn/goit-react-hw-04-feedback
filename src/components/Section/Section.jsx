@@ -5,7 +5,6 @@ export const Section = ({ title, children }) => {
   return (
     <section className={css.section}>
       <h2 className={css.title}>{title}</h2>
-      {/* <h2 className={css.title2}>{title2}</h2> */}
       {children}
     </section>
   );
@@ -13,6 +12,5 @@ export const Section = ({ title, children }) => {
 
 Section.propTypes = {
   title: PropTypes.string.isRequired,
-  // title2: PropTypes.string,
   children: PropTypes.element,
 };
